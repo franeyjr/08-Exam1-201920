@@ -289,7 +289,10 @@ def problem3b(m, r):
     # TODO: 4. Implement and test this function.
     #          Tests have been written for you (above).
     ###########################################################################
-
+    total = 1/r
+    for k in range(m+1):
+        total = total + ((k+2) / ((r+1+k) ** (k+2)))
+    return total
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
